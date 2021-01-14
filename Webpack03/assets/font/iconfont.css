@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1610286273483'); /* IE9 */
+  src: url('iconfont.eot?t=1610286273483#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAO4AAsAAAAAB+QAAANpAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDDAqDMIJ0ATYCJAMQCwoABCAFhG0HRxvVBsgekqRfBIqiFsBVOQAAx8PXfvzO3d33vogk0fi7T1fHEtEb1XQ6pEIqZNHIkPjDr3u/4MFNzm4g78+4NyIBTltTcl8SN9a0wKqyV5WCRlkFAHPlPFB6+fyAjGIjq3ZTdnr/czm9Fvhh61uWy1zLjnoBxgEFNNamgA60gBLkHmMD7X6OE2g2zhJy3Xe08sUUxrhA3E5UD75YSq/UlIZGoS5ZWsQrRKUxPUadQXjpfz9+sg8CSZUZUzdutc++2hfw5TtD/5ATF0EIxrOCW0XGAoRCHJTatwTD+AK0ZiUeMgWxrn7Bl96rf74Al7/avzxCkomaUdwKFjGR+QJsFsGXHp10hgLMkwFX0YgWPELwAdSj40yvpZwneBhMa2tT3ZV+szG7+DYDAHB3/eZpB32HODtIF/o2hUTiFOb1w4C/v/mAw5FmQCY/7UZoe89NXZx2mJcBv4UczQd0dPsluZuri9MM8wKEnV6pxq+7J5fKkYvJ2p55t2Eb2kkO/hbsnJSPfjDNvTkBXm68TcF9/OM03BDakNww1xB79A4NeM8HTkHPJPydx8kdRsw1f7Ehlh7z2HqHQPo7lR54dXrmuOD1W7LV5i1B/LvZ4uvwI3adbXUbcZPY1uAuzkhKJQ1+3DNqf3JTG9FEbIPMdd5GrxfGonLm+7fJM28zE2G88/o//pE8MfPvmRWQ/7Pveld/aD7fVd32/zUBXywZjJPSn3QEQd5AQQjkIdThX/uNh/XoXjjd+ZVALuCzUnvg64t+iUaJ1oJ/JGjZUFSRYShFFtt8LVAs+RmTEpo14wrc3W7HUPa1LiY06oshaTAGWaMJQqEsQKXFItQaLUGzeX6rW/TIEhSlCXOqAUKnOUjafYKs0zmhUG6g0u8Jap2BhmZ7wd6yxVQkkryy8CB4hqgHSDyRo1gmSQSlC1Q968BJkU/dILt6COysbbOpLjrIY8zIvlUrOaJAHJMNvnAaWhZBBpOBJykkiFyqNjZxZW8qRJPtS1jD0IFAZyDKA5DohDgUt7VI5D6/gFQeywHXYCrsG4i59M6BHWu2LQhdudMKcy2vZLulqsghFCAOIzbgC1ZkmXECMsoHGdCJKEjoEb2osiHN4trKC/Mr7SfcBs2MG0qkyFGi0nItxUMhEo2cSHSkffYcLzfdYxd9PgAAAA==') format('woff2'),
+  url('iconfont.woff?t=1610286273483') format('woff'),
+  url('iconfont.ttf?t=1610286273483') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1610286273483#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bluetoothon:before {
+  content: "\e697";
+}
+
+.icon-camera:before {
+  content: "\e698";
+}
+
+.icon-course:before {
+  content: "\e699";
+}
+

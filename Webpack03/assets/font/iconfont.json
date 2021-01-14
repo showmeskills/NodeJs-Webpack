@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8106210",
+      "name": "bluetoothon",
+      "font_class": "bluetoothon",
+      "unicode": "e697",
+      "unicode_decimal": 59031
+    },
+    {
+      "icon_id": "8106211",
+      "name": "camera",
+      "font_class": "camera",
+      "unicode": "e698",
+      "unicode_decimal": 59032
+    },
+    {
+      "icon_id": "8106212",
+      "name": "course",
+      "font_class": "course",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    }
+  ]
+}
