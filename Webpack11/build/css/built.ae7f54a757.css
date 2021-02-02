@@ -1,0 +1,1 @@
+*{margin:0;padding:0}body,html{background-color:pink}#box{background-color:#ff0;display:flex;-webkit-backface-visibility:hidden;backface-visibility:hidden}#box,#box1{width:100px;height:100px}#box1{background-color:green}
