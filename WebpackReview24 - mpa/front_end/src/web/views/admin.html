@@ -1,0 +1,86 @@
+{{extend './layout.html'}}
+
+{{block 'title'}}Book{{/block}}
+
+{{block 'head'}}
+    <link rel="stylesheet" href="/css/admin.css">
+{{/block}}
+
+{{block 'content'}}
+    <h1>six 图书管理系统</h1>
+
+    <a class="btn btn-default" href="/addpage">添加图书</a>
+
+    <div>
+
+        <table  class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>书名</th>
+                    <th>作者</th>
+                    <th>分类</th>
+                    <th>描述</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                {{each data}}
+                    <tr>
+                        <td>{{$value.id}}</td>
+                        <td>{{$value.name}}</td>
+                        <td>{{$value.author}}</td>
+                        <td>{{$value.category}}</td>
+                        <td>{{$value.description}}</td>
+                        <td>
+                            <a href="/editpage?editid={{$value.id}}">修改</a> |
+                            <a href="/delete?deleteid={{$value.id}}">删除</a>
+                        </td>
+                    </tr>
+                {{/each}}
+
+
+                <!-- <tr>
+                    <td>111</td>
+                    <td>222</td>
+                    <td>333</td>
+                    <td>444</td>
+                    <td>555</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>222</td>
+                    <td>333</td>
+                    <td>444</td>
+                    <td>555</td>
+                </tr>
+                <tr>
+                    <td>111</td>
+                    <td>222</td>
+                    <td>333</td>
+                    <td>444</td>
+                    <td>555</td>
+                </tr> -->
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <hr />
+
+        <div id="app">
+            <h2>[[message]]</h2>
+
+            <input type="text" v-model="message">
+        </div>
+
+    <hr />
+{{/block}}
+
+{{block 'scripts'}}
+        <script src="/scripts/index.js"></script>
+{{/block}}

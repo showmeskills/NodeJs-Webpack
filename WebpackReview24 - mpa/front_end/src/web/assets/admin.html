@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <!-- 提示框样式 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <!--  -->
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1>six 图书管理系统</h1>
+
+        <a class="btn btn-default" href="javascript:;" id="add">添加图书</a>
+
+        <div>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>分类</th>
+                        <th>描述</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tbody"></tbody>
+            </table>
+
+        </div>
+
+
+        <hr />
+
+        <div id="app">
+            <h2>[[message]]</h2>
+
+            <input type="text" v-model="message">
+        </div>
+
+        <hr />
+
+    </div>
+
+    <!-- 模态框 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <!-- == 模态框内容 ==================== -->
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">新增</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="txt_departmentname">书名</label>
+                            <input type="text" name="name" class="form-control" id="txt_departmentname"
+                                placeholder="书名">
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_parentdepartment">作者</label>
+                            <input type="text" name="author" class="form-control" id="txt_parentdepartment"
+                                placeholder="作者">
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_departmentlevel">分类</label>
+                            <input type="text" name="category" class="form-control" id="txt_departmentlevel"
+                                placeholder="分类">
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_statu">描述</label>
+                            <input type="text" name="description" class="form-control" id="txt_statu" placeholder="状态">
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><span
+                            class="glyphicon glyphicon-remove" aria-hidden="true"></span>关闭</button>
+                    <!-- <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span
+                            class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存</button> -->
+                    <button type="button" id="btn_submit" class="btn btn-primary"><span
+                            class="glyphicon glyphicon-floppy-disk"></span>提交</button>
+                </div>
+
+                <!-- == 模态框内容 ==================== -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 模板 -->
+    <script type="text/template" id="template">
+        {{each data}}
+            <tr>
+                <td>{{$value.id}}</td>
+                <td>{{$value.name}}</td>
+                <td>{{$value.author}}</td>
+                <td>{{$value.category}}</td>
+                <td>{{$value.description}}</td>
+                <td class="edit">
+                    <a href="javascript:;">修改</a> |
+                    <a href="javascript:;">删除</a>
+                </td>
+            </tr>
+        {{/each}}
+    </script>
+
+
+
+    <!-- vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- jQuery.js -->
+    <script src="/scripts/jquery-3.5.1.js"></script>
+    <!-- art-template -->
+    <script src="https://cdn.staticfile.org/art-template/4.10.0/lib/template-web.min.js"></script>
+    <!-- bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <!-- 提示框 js -->  
+    <!-- https://codeseven.github.io/toastr/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!--  -->
+    <script src="/scripts/index.js"></script>
+</body>
+
+</html>

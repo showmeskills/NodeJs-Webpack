@@ -1,0 +1,48 @@
+[2021-01-05T21:24:36.971] [ERROR] cheese - ReferenceError: data is not defined
+    at C:\Users\china\Desktop\code\第十六课\book\controllers\indexController.js:11:17
+    at dispatch (C:\Users\china\Desktop\code\第十六课\book\node_modules\koa-simple-router\index.js:186:18)
+    at Router._lookup (C:\Users\china\Desktop\code\第十六课\book\node_modules\koa-simple-router\index.js:198:12)
+    at C:\Users\china\Desktop\code\第十六课\book\node_modules\koa-simple-router\index.js:138:21
+    at dispatch (C:\Users\china\Desktop\code\第十六课\book\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\china\Desktop\code\第十六课\book\node_modules\koa-static\index.js:53:15)
+    at async C:\Users\china\Desktop\code\第十六课\book\middlewares\index.js:17:13
+    at async C:\Users\china\Desktop\code\第十六课\book\middlewares\index.js:5:17
+[2021-01-07T21:10:26.347] [ERROR] cheese - TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Array
+    at Object.writeFile (node:fs:1440:5)
+    at SafeRequest.addData (C:\Users\china\Desktop\code\第十七课\book\models\index.js:32:12)
+    at C:\Users\china\Desktop\code\第十七课\book\controllers\indexController.js:38:25
+    at dispatch (C:\Users\china\Desktop\code\第十七课\book\node_modules\koa-simple-router\index.js:186:18)
+    at Router._lookup (C:\Users\china\Desktop\code\第十七课\book\node_modules\koa-simple-router\index.js:198:12)
+    at C:\Users\china\Desktop\code\第十七课\book\node_modules\koa-simple-router\index.js:138:21
+    at dispatch (C:\Users\china\Desktop\code\第十七课\book\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\china\Desktop\code\第十七课\book\node_modules\koa-static\index.js:53:15)
+    at dispatch (C:\Users\china\Desktop\code\第十七课\book\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\china\Desktop\code\第十七课\book\middlewares\index.js:17:19 {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+[2021-01-07T21:43:24.680] [ERROR] cheese - [Error [TemplateError]: C:\Users\china\Desktop\code\第十七课\book\views\editpage.html:18:88
+    16|             <div class="form-group">
+    17|                 <label for="exampleInputEmail1">书名</label>
+ >> 18|                 <input type="text" class="form-control" id="exampleInputEmail1" value="{{data.name}}" name='name'>
+    19|             </div>
+    20|             <div class="form-group">
+    21|                 <label for="exampleInputEmail1">作者</label>
+
+RuntimeError: Cannot read property 'name' of undefined]
+[2021-01-16T20:31:56.266] [ERROR] cheese - ReferenceError: data is not defined
+    at C:\Users\china\Desktop\code\第二十一课\book\models\index.js:10:21
+    at new Promise (<anonymous>)
+    at SafeRequest.getData (C:\Users\china\Desktop\code\第二十一课\book\models\index.js:9:16)
+    at C:\Users\china\Desktop\code\第二十一课\book\controllers\indexController.js:21:41
+    at dispatch (C:\Users\china\Desktop\code\第二十一课\book\node_modules\koa-simple-router\index.js:186:18)
+    at Router._lookup (C:\Users\china\Desktop\code\第二十一课\book\node_modules\koa-simple-router\index.js:198:12)
+    at C:\Users\china\Desktop\code\第二十一课\book\node_modules\koa-simple-router\index.js:138:21
+    at dispatch (C:\Users\china\Desktop\code\第二十一课\book\node_modules\koa-compose\index.js:42:32)
+    at serve (C:\Users\china\Desktop\code\第二十一课\book\node_modules\koa-static\index.js:53:15)
+    at async C:\Users\china\Desktop\code\第二十一课\book\middlewares\index.js:17:13
+[2021-01-23T20:50:37.491] [ERROR] cheese - { code: 1, message: '与后台通信失败', data: [] }
+[2021-03-18T23:34:44.428] [ERROR] cheese - { code: 1, message: '与后台通信失败', data: [] }
+[2021-03-18T23:36:30.207] [ERROR] cheese - { code: 1, message: '与后台通信失败', data: [] }
+[2021-03-24T22:15:41.060] [ERROR] cheese - [Error [TemplateError]: template not found: ENOENT: no such file or directory, open 'D:\BaiduNetdiskDownload\00.前端基础入门2005期\GitHubWebpack\WebpackReview24 - mpa\front_end\dist\views\index.html']
+[2021-03-24T22:16:07.042] [ERROR] cheese - [Error [TemplateError]: template not found: ENOENT: no such file or directory, open 'D:\BaiduNetdiskDownload\00.前端基础入门2005期\GitHubWebpack\WebpackReview24 - mpa\front_end\dist\server\views\index.html']
+[2021-03-24T22:16:08.970] [ERROR] cheese - [Error [TemplateError]: template not found: ENOENT: no such file or directory, open 'D:\BaiduNetdiskDownload\00.前端基础入门2005期\GitHubWebpack\WebpackReview24 - mpa\front_end\dist\server\views\index.html']

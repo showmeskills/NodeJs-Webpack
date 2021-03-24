@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hello</h2>
+
+    <!-- <script src="/scripts/ess.js"></script> -->
+
+    <script type="module">
+        // console.log(' ====>>>>', import('/scripts/ess.js'));
+
+        console.log(' ====>>>>', '支持 es  module');
+        
+
+        import('/scripts/ess.js').then(_ => {
+            // console.log('_.default ====>>>>', _.default);
+
+            let Persen = _.default;
+            let persen = new Persen;
+
+            persen.fn();
+            
+        })
+    </script>
+
+    <script nomodule src="https://cdn.staticfile.org/systemjs/6.8.3/system.min.js"></script>
+    <script nomodule>
+        System.import('/scripts/ess_bundle.js').then(_ => {
+            console.log(' ====>>>>', 'system module');
+
+            let Persen = _.default;
+            let persen = new Persen;
+
+            persen.fn();
+            
+        })
+    </script>
+
+</body>
+</html>

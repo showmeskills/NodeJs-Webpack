@@ -1,0 +1,17 @@
+{{extend '../../layout/layout.html'}}
+
+{{block 'title'}}Book{{/block}}
+
+{{block 'head'}}
+     <link rel="stylesheet" href="/style/books-index.css"/>
+{{/block}}
+
+{{block 'content'}}
+    {{include '../../../components/navigate/navigate.html'}}
+    {{include '../../../components/index/index.html'}}
+{{/block}}
+
+{{block 'scripts'}}
+    <script src="/scripts/index.js"></script>
+    <script defer src="/scripts/books-index.bundle.js"></script>
+{{/block}}

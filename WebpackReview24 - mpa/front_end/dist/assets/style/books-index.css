@@ -1,0 +1,7 @@
+.components-index h1{
+    color:blue;
+}
+.components-navigate ul li{
+    list-style-type:none;
+    font-size:40px;
+}

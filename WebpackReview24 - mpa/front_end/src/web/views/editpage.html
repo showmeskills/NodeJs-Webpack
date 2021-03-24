@@ -1,0 +1,41 @@
+{{extend './layout.html'}}
+
+{{block 'title'}}Book{{/block}}
+
+{{block 'head'}}
+    <link rel="stylesheet" href="/css/admin.css">
+{{/block}}
+
+{{block 'content'}}
+    <h2>编辑图书页</h2>
+
+    <div>
+
+        <form action="/edit" method="post">
+            <input type="hidden" value="{{data.id}}" name='id'>
+            <div class="form-group">
+                <label for="exampleInputEmail1">书名</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" value="{{data.name}}" name='name'>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">作者</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" value="{{data.author}}" name='author'>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">分类</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" value="{{data.category}}" name='category'>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">描述</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" value="{{data.description}}" name='description'>
+            </div>
+
+            <button type="submit" class="btn btn-default">修改</button>
+        </form>
+
+    </div>
+    
+{{/block}}
+
+<!-- {{block 'scripts'}}
+{{/block}} -->
